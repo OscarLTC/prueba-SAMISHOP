@@ -84,7 +84,7 @@ export const Sidebar = () => {
         characters.map((character: IPeople) => (
           <div key={character.url}>
             <div
-              className='flex md:hidden py-4 pr-4 justify-between border-y '
+              className='flex md:hidden py-4 pr-4 justify-between border-y cursor-pointer'
               onClick={() => onCharacterMobileClick(character)}
             >
               <div>
@@ -99,7 +99,7 @@ export const Sidebar = () => {
               </span>
             </div>
             <div
-              className='py-4 pr-4 justify-between border-y hidden md:flex'
+              className='py-4 pr-4 justify-between border-y hidden md:flex cursor-pointer'
               onClick={() => onCharacterWebClick(character)}
             >
               <div>
